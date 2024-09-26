@@ -1,0 +1,48 @@
+soal 1
+Coding
+package org.example
+
+fun main() {
+    print("Masukkan harga barang: ")
+    val harga = readLine()?.toDoubleOrNull()
+
+    if (harga == null || harga < 0) {
+        println("Harga tidak valid.")
+    } else if (harga < 100000) {
+        println("Kategori: Murah")
+    } else if (harga <= 500000) {
+        println("Kategori: Sedang")
+    } else {
+        println("Kategori: Mahal")
+    }
+}
+Soal 2
+
+fun main() {
+    val daftarAngka = listOf(10, 8, 0, 15, -5, 20, 25)
+
+    for (angka in daftarAngka) {
+        if (angka < 0) {
+            println("Pengecekan dihentikan karena ditemukan angka negatif: $angka")
+            break
+        }
+        if (angka == 0) continue
+        println("Angka: $angka")
+    }
+}
+
+Soal 3
+fun main() {
+    val daftarAngka = listOf(10, 8, 0, 15, -5, 20, 25)
+
+    for (angka in daftarAngka) {
+        if (angka < 0) {
+            println("Pengecekan dihentikan karena ditemukan angka negatif: $angka")
+            break
+        }
+        if (angka == 0) continue
+        println("Angka: $angka")
+    }
+}
+
+
